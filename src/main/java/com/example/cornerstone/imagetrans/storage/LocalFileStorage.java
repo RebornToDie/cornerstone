@@ -15,6 +15,16 @@ public class LocalFileStorage implements IFileStorage {
 
     private static Logger log = LoggerFactory.getLogger(LocalFileStorage.class);
 
+    private LocalFileStorage(){
+
+    }
+
+    private static LocalFileStorage localFileStorage = new LocalFileStorage();
+
+    public static LocalFileStorage getInstance(){
+        return localFileStorage;
+    }
+
     @Override
     public long saveFile(String absolutePath, InputStream input)
             throws IOException {
