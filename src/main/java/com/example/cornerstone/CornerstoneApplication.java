@@ -1,5 +1,6 @@
 package com.example.cornerstone;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -7,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Properties;
 
+@EnableSwagger2Doc
 @SpringBootApplication
 public class CornerstoneApplication {
 
