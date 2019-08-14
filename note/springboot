@@ -1,3 +1,6 @@
 ####springboot 静态页面访问
 引入thymeleaf jar包 在resources下创建static文件  
 文件夹下为web静态页面访问路径
+
+swagger访问页面  
+http://localhost:8080/swagger-ui.html
