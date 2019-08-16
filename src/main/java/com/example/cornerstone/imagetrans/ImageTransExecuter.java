@@ -38,9 +38,9 @@ public class ImageTransExecuter {
      * @param suffix     - 文件后缀
      * @return 是否创建成功
      */
-    private static boolean storeThumbnailFile(String source, String target,
+    public static boolean storeThumbnailFile(String source, String target,
                                               String sizePatten, String suffix) throws IOException {
-        String[] indexArray = sizePatten.split("\\*");
+        String[] indexArray = sizePatten.split("x");
         if (1 == indexArray.length) {
             int maxThumSize = Integer.valueOf(sizePatten);
             return storeThumbnailFile(source, target, maxThumSize, suffix);
@@ -211,7 +211,9 @@ public class ImageTransExecuter {
      */
     private static BufferedImage getBufferedImage(ImageReader imgReader, double imgWidth, double imgHeight) throws IOException {
         try {
-            return imgReader.readThumbnail(0, 0);
+            if(imgReader.getNumThumbnails(0) > 0){
+                return imgReader.readThumbnail(0, 0);
+            }
         } catch (IllegalStateException e) {
             log.error(e.getMessage(), e);
         } catch (IndexOutOfBoundsException e1) {
