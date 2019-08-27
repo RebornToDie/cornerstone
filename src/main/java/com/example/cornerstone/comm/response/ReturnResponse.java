@@ -1,4 +1,4 @@
-package com.example.cornerstone.response;
+package com.example.cornerstone.comm.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,9 +1,9 @@
 package com.example.cornerstone.controller;
 
+import com.example.cornerstone.comm.response.ReturnResponse;
 import com.example.cornerstone.imagetrans.ImageTransExecuter;
 import com.example.cornerstone.imagetrans.storage.LocalFileStorage;
 import com.example.cornerstone.imagetrans.util.ConstantConf;
-import com.example.cornerstone.response.ReturnResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
