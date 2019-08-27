@@ -9,7 +9,7 @@ Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文�
 static变量在Java中是属于类的，它在所有的实例中的值是一样的。当类被Java虚拟机载入的时候，会对static变量进行初始化。如果你的代码尝试不用实例来访问非static的变量，编译器会报错，因为这些变量还没有被创建出来，还没有跟任何实例关联上。
 
 4.Java支持的数据类型有哪些？什么是自动拆装箱？  
-Java语言支持的8中基本数据类型是：
+Java语言支持的8种基本数据类型是：
 byte short int long float double boolean char  
 自动装箱是Java编译器在基本数据类型和对应的对象包装类型之间做的一个转化。比如：把int转化成Integer，double转化成Double，等等。反之就是自动拆箱。
 
