@@ -1,0 +1,89 @@
+==========JAVA基础篇==============  
+"==" equals区别  
+
+同步和异步的区别？ 同步阻塞，同步非阻塞  
+
+线程池  
+
+ThreadLocal是什么?  
+线程本地变量(线程私有的缓存变量的容器)
+
+常用的设计模式?  
+
+抽象类和接口的区别，使用场景  
+接口是核心，每个实现接口的类都需要实现接口定义的方法，若某些类实现同一个接口其中某些方法具有共性可以将其抽象为抽象类。  
+
+InputStream 与InputStreamReader 区别  
+InputStream：得到的是字节输入流，InputStream.read(“filename”)之后，得到字节流
+Reader:读取的是字符流 
+InputStreamReader:从字节到字符的桥梁
+InputStreamReader(InputStream.read(“filename”));
+reader.read(InputStreamReader(InputStream in));便可从字节变为字符，打印显示了。
+Java.io.Reader 和 java.io.InputStream 组成了Java 输入类。 
+Reader 用于读入16位字符，也就是Unicode 编码的字符；而 InputStream 用于读入 ASCII 字符和二进制数据。 
+Reader支持16位的Unicode字符输出， 
+InputStream支持8位的字符输出。 
+Reader和InputStream分别是I/O库提供的两套平行独立的等级机构，
+1byte = 8bits 
+InputStream、OutputStream是用来处理8位元的流， 
+Reader、Writer是用来处理16位元的流。
+而在JAVA语言中，byte类型是8位的，char类型是16位的，所以在处理中文的时候需要用Reader和Writer。
+值得说明的是，在这两种等级机构下，还有一道桥梁 
+InputStreamReader、OutputStreamWriter负责进行InputStream到Reader的适配和由OutputStream到Writer的适配。
+在 Java中，有不同类型的 Reader 输入流对应于不同的数据源： 
+FileReader 用于从文件输入； CharArrayReader 用于从程序中的字符数组输入； StringReader 用于从程序中的字符串输入； PipedReader 用于读取从另一个线程中的 PipedWriter 写入管道的数据。
+相应的也有不同类型的 InputStream 输入流对应于不同的数据源：FileInputStream，ByteArrayInputStream，StringBufferInputStream，PipedInputStream。
+另外，还有两种没有对应 Reader 类型的 InputStream 输入流： Socket 用于套接字； URLConnection 用于 URL 连接。 这两个类使用 getInputStream() 来读取数据。 
+相应的，java.io.Writer 和 java.io.OutputStream 也有类似的区别。
+
+常见的字符编码有哪些？ 怎么转换? 如何指定JVM的字符编码?  
+
+java 序列化怎么实现？(Serializable)  
+
+ClassLoader机制?
+GC的实现机制?
+servlet线程安全吗？
+servlet的常用接口init、destory、doget、dopost、service、
+request.getAttribute() request.getParameter() 区别
+java的反射机制?
+线程阻塞、死锁
+线程、进程异同
+设计一个树形结构
+写个json
+String和StringBuilder、StringBuffer?...
+喜欢去哪些网站搜索问题答案（stackoverflow、google）；
+svn checkout、 update ?
+webservice实现方式
+如果有10万条学生成绩信息，怎么获取成绩最高的那一条数据，怎么获取成绩第三的那一条数据，列举你认为性能最好的方式
+distinct \groupby 区别
+数据库视图优劣
+何为sso，如何实现?
+几种cache策略？ LRU
+==========中级篇==================
+http集群方案  lvp 
+nosql 为什么比rdb支持的数据量更大?
+java io与nio 区别
+JDK1.5新增的功能
+hash算法的实现原理，hashcode的实现原理
+数据库同步实现机制？怎样集群
+并说出Servlet和CGI的区别。
+如何优化数库，提高其性能？
+jquery的“$”的底层是如何实现的。
+说说JVM原理？内存泄露与溢出区别，何时产生内存泄露？如何避免？ 有何种工具可辅助排查
+用java怎么实现有每天有1亿条记录的DB存储？mysql上亿记录数据量的数据库如何设计？
+DB存储引擎有哪些？
+hash算法的实现原理，hashcode的实现原理
+排序算法，他们是时间复杂度是多少
+ajax如何跨域几种方式?
+http和https的区别
+猎取一些JVM常用的参数
+如何实现Http长连接
+
+线程阻塞、死锁 
+JVM 内存模型，垃圾回收 
+如何优化数库，提高其性能 
+http集群方案 
+mysql上亿记录数据量的数据库如何设计？ 
+说说JVM原理？内存泄露与溢出区别，何时产生内存泄露？如何避免？ 有何种工具可辅助排查   
+CPU飙高排查？ 内存泄露排查？  OutOfMem排查? 
+web系统一般性能瓶颈先出现在哪部分？  
