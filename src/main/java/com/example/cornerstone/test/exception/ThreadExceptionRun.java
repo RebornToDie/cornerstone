@@ -1,5 +1,8 @@
-package com.example.cornerstone.test.logback.test.exception;
+package com.example.cornerstone.test.exception;
 
+
+import java.util.HashMap;
+import java.util.Hashtable;
 
 public class ThreadExceptionRun implements Runnable {
     @Override
@@ -16,6 +19,8 @@ public class ThreadExceptionRun implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        HashMap hashMap = new HashMap<>();
+        Hashtable hashtable = new Hashtable();
 
     }
 
