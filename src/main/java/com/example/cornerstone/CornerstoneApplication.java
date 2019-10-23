@@ -11,7 +11,7 @@ import java.util.Properties;
 
 @EnableSwagger2Doc
 @SpringBootApplication
-@MapperScan("com.example.mybatisplus")
+//@MapperScan("com.example.mybatisplus")
 public class CornerstoneApplication {
 
     private static Logger log = LoggerFactory.getLogger(CornerstoneApplication.class);

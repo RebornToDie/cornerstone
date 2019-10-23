@@ -1,0 +1,4 @@
+引入springboot security出错
+[ERROR] 读取C:\Users\Rhdev\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.1.5.RELEASE\spring-boot-starter-security-2.1.5.RELEASE.jar时出
+错; error in opening zip file
+解决：maven中jar实际不存在，但本地仓库下载成功，更换正确的jar包版本
