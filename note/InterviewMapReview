@@ -60,7 +60,7 @@ cat 1.txt | rep 1.txt
 3.netty的原理
 4.消息队列为什么使用redis，kafka与rocketmq ，activemq间选择比较
 5.在java的那些场景使用过设计模式
-6.快速排序算法
+6.快速排序算法,如何选择最有效的算法
 7.分布式数据库的使用
 
 管易
