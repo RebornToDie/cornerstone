@@ -1,5 +1,77 @@
 自我介绍
+毕业院校
+主要业务
+负责开发什么项目（使用技术）
+
+最擅长哪方面的技术
 技术难点
+
+阿里面试
 问题
 1.分布式事务的一致性如何实现
-2.Kafka比redis做消息队列有哪些优势·	
+2.Kafka比redis做消息队列有哪些优势
+
+1.ThreadLocal的使用场景有哪些
+2.事务的隔离级别
+3.https与http的区别，https的实现
+4.mysql的索引在什么时候会失效
+5.mysql的最左原则是如何实现的
+6.线程安全如何实现，java中并发包使用过哪些
+
+中国太保面试
+笔试
+1.java创建对象的几种方式
+a.用new关键字创建
+b.调用对象的clone方法
+c.利用反射，调用Class类的或者是Constructor类的newInstance（）方法
+d.用反序列化，调用ObjectInputStream类的readObject（）方法
+2.有return的情况下try catch finally 的执行顺序
+a.不管有没有出现异常，finally块中代码块都会执行
+b.当try和catch中有return时，finally仍然会执行
+c.finally是在return后面的表达式运算后执行的执行之前执行的
+d.若finally中包含return会对返回值进行复制操作
+3.grep命令查看文本行
+grep text 1.txt
+cat 1.txt | rep 1.txt
+4.IOC/DI
+
+面试
+1.mysql的优化过程
+2.在不同服务器上如何执行重复操作
+3.quartze的配置过程和内容
+4.后台权限控制方法
+5.java多线程的通信如何做的，有几种实现方式
+6.数据库原文存储方法，字段存储的方式，mysql分列查询的条件
+7.spring mvc请求的流程
+
+携程面试
+笔试
+1.84*148=B6A8 在使用几进制的情况下可以使等式成立？
+2.一个哈夫曼树有4个叶子，则它的节点总数有几个？
+3.冒泡、希尔、归并、快速排序在最坏情况下哪个算法是最快的？
+
+面试
+1.一致性hash
+2.电商项目：如何设计高并发下的电商系统在下单时会出现多个订单同时扣减一个库存导致商品超卖的现象？
+
+平安普惠
+1.mysql服务器的优化
+2.长连接、短连接的含义和区别
+3.netty的原理
+4.消息队列为什么使用redis，kafka与rocketmq ，activemq间选择比较
+5.在java的那些场景使用过设计模式
+6.快速排序算法
+7.分布式数据库的使用
+
+管易
+1.消息服务器如何实现及时通讯的
+2.synchronized的使用场景，若要优化如何实现
+3.spring cloud和dubbo的使用
+
+轻轻家教
+1.java中集合对象解释一下
+2.java锁，cas的实现原理
+
+
+
+
